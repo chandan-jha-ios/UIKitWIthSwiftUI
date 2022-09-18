@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "955650F7-0BEB-4B53-B382-29F3B6AF3C19"
+            uuid = "8F71E7D0-7851-4BA1-99D6-532A79390853"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitWithSwiftUI/App/Authentication/Login/View/LoginController.swift"
+            filePath = "UIKitWithSwiftUI/App/Home/WebViewCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "setupDidload()"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB37EBA8-6921-4554-9398-C1B6C34B9CA5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitWithSwiftUI/App/Home/WebViewCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "webView(_:didFail:withError:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

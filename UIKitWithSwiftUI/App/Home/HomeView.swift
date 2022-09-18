@@ -8,22 +8,20 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var webData: WebData
     
     var body: some View {
         NavigationView {
             ZStack{
-                ScrollView {
-                    Text("Welcome Guest")
+                    Text("Welcome Abroad")
                         .padding()
                         .navigationBarTitle("Home", displayMode: .inline)
-                    Spacer()
-                }
+                    WebViewWrapper(data: $webData)
             }
             .foregroundColor(.black)
             .navigationBarItems(trailing: logoutBtn)
-            
         }
-        .navigationBarColor(backgroundColor: AppColor.theme.value)
+        .navigationBarColor(backgroundColor: AppColor.theme.value, titleColor: .black)
     }
     
     private var logoutBtn: some View {
@@ -36,11 +34,5 @@ struct HomeView: View {
     private func handleLogout() {
         UserDefaults.standard.removeObject(forKey: "user")
         (UIApplication.shared.delegate as? AppDelegate)?.showHomeOrLogin()
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
     }
 }

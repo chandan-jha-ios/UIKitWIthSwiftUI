@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     @objc func showHomeOrLogin() {
         if UserDefaults.standard.value(forKey: "user") != nil {
-            let home = HomeView()
+            let url = URL(string: "https://www.google.com/")!
+            let data = WebData(url: url)
+            let home = HomeView(webData: data)
             let controller = UIHostingController(rootView: home)
             window?.rootViewController = controller
         } else if let controller = LoginController.loadController() {

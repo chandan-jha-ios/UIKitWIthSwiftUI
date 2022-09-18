@@ -9,7 +9,8 @@ Demo to add feature of SwiftUI in existing iOS applications
 5. So try with valid combination of password
 
 ```
-UIKit + SwiftUI + RxSwift + MVVM
+UIKit + RxSwift + MVVM + SwiftUI + Combine
+WebKit wrapped by Coordinator to implement in SwiftUI
 SOLID 
 Decorator
 Repository
